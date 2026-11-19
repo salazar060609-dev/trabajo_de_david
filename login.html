@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso de Miembros - NexusAnime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <span class="brand-logo-text">Nexus<span>Anime</span></span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#catalogo">Géneros</a>
+                <a href="index.html#comunidad">Comunidad</a>
+                <a href="index.html" class="btn-nav-back">Volver al inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección principal del Login / Registro -->
+    <main class="login-section">
+        <div class="login-wrapper">
+            <div class="login-card">
+                <div class="login-header">
+                    <span class="login-badge">Comunidad Oficial</span>
+                    <h1>Únete a NexusAnime</h1>
+                    <p>Crea tu cuenta para participar en debates, watch parties y rankings</p>
+                </div>
+
+                <div class="auth-tabs">
+                    <button type="button" class="auth-tab">Iniciar Sesión</button>
+                    <button type="button" class="auth-tab active">Crear Cuenta</button>
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="form-group-margin">
+                        <label for="nickname" class="login-label">Nickname / Nombre de usuario</label>
+                        <input type="text" id="nickname" name="nickname" class="form-control-input" placeholder="Ej. Kurogane_99" required>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="email" class="login-label">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control-input" placeholder="usuario@nexusanime.com" required>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="genero" class="login-label">Género principal</label>
+                        <select id="genero" name="genero" class="form-control-select" required>
+                            <option value="">Selecciona tu categoría favorita...</option>
+                            <option value="shonen">Shōnen y Acción</option>
+                            <option value="isekai">Isekai y Fantasía</option>
+                            <option value="seinen">Seinen y Misterio</option>
+                            <option value="romance">Romance y Slice of Life</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="password" class="login-label">Contraseña</label>
+                        <input type="password" id="password" name="password" class="form-control-input" placeholder="Mínimo 8 caracteres" required>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="terminos" class="form-checkbox-input" required>
+                        <label for="terminos" class="form-checkbox-label">
+                            Acepto las normas de la comunidad y la política contra spoilers.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Completar Registro</button>
+                </form>
+
+                <div class="login-divider">
+                    <span>o continúa con</span>
+                </div>
+
+                <div class="social-login-grid">
+                    <button type="button" class="btn-social-auth">Discord</button>
+                    <button type="button" class="btn-social-auth">Crunchyroll</button>
+                </div>
+
+                <p class="login-footer-text">
+                    ¿Ya tienes cuenta? <a href="#">Inicia sesión aquí</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>NexusAnime Portal de Anime y Comunidad Otaku © 2026</p>
+                <p class="footer-author">Desarrollado por: Salazar Avilez Cristian Jair (5A PRO VESP)</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://discord.com" target="_blank" class="social-link-text">Discord</a>
+                <a href="https://twitch.tv" target="_blank" class="social-link-text">Twitch</a>
+                <a href="https://youtube.com" target="_blank" class="social-link-text">YouTube</a>
+                <a href="https://twitter.com" target="_blank" class="social-link-text">X / Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
